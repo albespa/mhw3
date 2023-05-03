@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html> 
+
+	<head>
+		<meta charset="utf-8">  <!--Enconding Suggerito da HTML5-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="mhw3.css"/>
+		<script src="mhw3.js" defer="true"></script>
+		<title> mhw3 - 1000016379 </title>
+	</head>
+	
+	<body>
+	
+	<!-- Rimuovo la NAVBAR poiché non richiesta dall'homework, mi creerebbe solo problemi di visualizzazione in più,
+	preferisco sostituirla con una barra dove svilupperò le due API con un menu a tendina
+	
+		<nav>
+			<div id="flex-container" class="flex-item">
+			<span>
+                <a class="links" href="https://www.lecamene.it/">HOME</a>
+            </span>
+            <span>
+                <a class="links" href="https://www.lecamene.it/">LISTA</a>
+            </span>
+            <span>
+                <a class="links" href="https://www.lecamene.it/">CONTATTI</a>
+            </span>
+			<span>
+                <a class="links" href="https://www.lecamene.it/">LOGOUT</a>
+            </span>
+            </div>
+		</nav>
+		
+	-->
+	
+	<!-- PARTE MHW3 -->
+	<form name='search_header' id="search_header">
+		<h1 id="bar_title">Ricerca il meteo della città che ospiterà il GP o scegli la canzone che accompagnerà il weekend di gara</h1>
+		
+		<div id="bar">
+		<label> <input type='text' name="content" id="content"></label> 
+		<select name="tipo" id="tipo">
+			<option value="meteo">Meteo</option>
+			<option value="musica">Musica</option>
+        </select>
+		
+        <label>&nbsp;<input class="submit" type="submit" value="Cerca"></label>
+
+        </div>
+    </form>
+
+
+    <div id="result" class="hidden">    
+	
+        <div id="Meteo_div" class="hidden">
+            <h1 id="Title_M"> </h1>
+            <p id="Parag_M">
+                <span>
+                </span>	
+            </p>
+            <a id="link_button"href=""> Ulteriori informazioni</a>
+        </div>
+		
+        <div id="Musica_div" class="hidden">  
+        </div>
+		
+    </div>
+	<!-- FINE PARTE MHW3 -->
+	
+		<header>
+		<h1 id="head_title">Le 5 migliori monoposto di Formula 1</h1>
+		</header>
+	
+		<section>
+		
+			<div id="profile">
+			<img id="avatar"src="Avatar.jpg">
+			<h1 id="name"><em>Alberto Spadaro<br>Ultimo aggiornamento: oggi</em></p>
+			</div>
+			<!-- Possiamo utilizzare anche <ol> e <li></li> ma dal template vedo che non è stato utilizzato pertanto creo la classe "list"
+			Per dividere adeguatamente le varie tipologie di testo tra titolo paragrafo, numeri puntati e testo conviene creare più classi
+			Avremmo potuto anche utilizzare h1,h2 ecc-->
+				
+			<div class="block">
+				<div class="list">1.</div>
+				<div class="p-block">
+				<div class="p-name">Ferrari F2004</div>
+				<div class="stats">Vittorie: 15</div>
+				<!--Di seguito potremmo utilizzare anche <br> nel caso...-->
+				<div class="text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper gravida dolor, in commodo ante varius sit amet. Mauris vitae condimentum leo. Aenean scelerisque volutpat eros quis rhoncus. Curabitur ut consectetur ipsum. Cras eu sodales ipsum. Pellentesque non imperdiet massa, at rhoncus erat. Vestibulum ac tempor nulla. Ut dui velit, dignissim eu diam at, semper interdum neque.
+				</div>
+				<p class="comment">Veloce.</p>
+				<img class="image" src="F2004.jpeg"/>
+				</div>
+			</div>
+			
+			<div class="block">
+				<div class="list">2.</div>
+				<div class="p-block">
+				<div class="p-name">McLaren MP4-4</div>
+				<div class="stats">Vittorie: 15</div>
+				<!--Di seguito potremmo utilizzare anche <br> nel caso...-->
+				<div class="text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper gravida dolor, 
+				in commodo ante varius sit amet. Mauris vitae condimentum leo. Aenean scelerisque volutpat 
+				eros quis rhoncus. Curabitur ut consectetur ipsum. Cras eu sodales ipsum. Pellentesque non 
+				imperdiet massa, at rhoncus erat. Vestibulum ac tempor nulla. Ut dui velit, dignissim eu diam 
+				at, semper interdum neque.
+				</div>
+				<p class="comment">Nociva.</p>
+				<img class="image" src="MP4-4.jpg"/>
+				</div>
+			</div>
+			
+			<div class="block">
+				<div class="list">3.</div>
+				<div class="p-block">
+				<div class="p-name">Mercedes W07</div>
+				<div class="stats">Vittorie: 19</div>
+				<!--Di seguito potremmo utilizzare anche <br> nel caso...-->
+				<div class="text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper gravida dolor, 
+				in commodo ante varius sit amet. Mauris vitae condimentum leo. Aenean scelerisque volutpat 
+				eros quis rhoncus. Curabitur ut consectetur ipsum. Cras eu sodales ipsum. Pellentesque non 
+				imperdiet massa, at rhoncus erat. Vestibulum ac tempor nulla. Ut dui velit, dignissim eu diam 
+				at, semper interdum neque.
+				</div>
+				<p class="comment">Illegale.</p>
+				<img class="image" src="W07.jpg"/>
+				</div>
+			</div>
+		
+			<div class="block">
+				<div class="list">4.</div>
+				<div class="p-block">
+				<div class="p-name">Lotus 25</div>
+				<div class="stats">Vittorie: 14</div>
+				<!--Di seguito potremmo utilizzare anche <br> nel caso...-->
+				<div class="text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper gravida dolor, 
+				in commodo ante varius sit amet. Mauris vitae condimentum leo. Aenean scelerisque volutpat 
+				eros quis rhoncus. Curabitur ut consectetur ipsum. Cras eu sodales ipsum. Pellentesque non 
+				imperdiet massa, at rhoncus erat. Vestibulum ac tempor nulla. Ut dui velit, dignissim eu diam 
+				at, semper interdum neque.
+				</div>
+				<p class="comment">Storica.</p>
+				<img class="image" src="Lotus25.jpg"/>
+				</div>
+			</div>
+			
+			<div class="block">
+				<div class="list">5.</div>
+				<div class="p-block">
+				<div class="p-name">Ferrari 500</div>
+				<div class="stats">Vittorie: 14</div>
+				<!--Di seguito potremmo utilizzare anche <br> nel caso...-->
+				<div class="text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper gravida dolor, 
+				in commodo ante varius sit amet. Mauris vitae condimentum leo. Aenean scelerisque volutpat 
+				eros quis rhoncus. Curabitur ut consectetur ipsum. Cras eu sodales ipsum. Pellentesque non 
+				imperdiet massa, at rhoncus erat. Vestibulum ac tempor nulla. Ut dui velit, dignissim eu diam 
+				at, semper interdum neque.
+				</div>
+				<p class="comment">Magistrale.</p>
+				<img class="image" src="F500.jpg"/>
+				</div>
+			</div>
+	
+		</section>
+		
+		<footer> 
+		<!-- Utilizzo <address> che è un elemento block i cui valori di default sono il type font in corsivo-->
+		</br><address>Università di Catania - DIEEI - Ing. Informatica</address>
+		<br><address>Realizzato da Alberto Spadaro 1000016379</address></br>
+		</footer>
+		
+	</body>
+	
+</html>
